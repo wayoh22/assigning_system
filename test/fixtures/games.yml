@@ -1,0 +1,17 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  league: MyString
+  home_team: MyString
+  away_team: MyString
+  start_time: 2021-05-11 07:55:20
+  end_time: 2021-05-11 07:55:20
+  location: MyString
+
+two:
+  league: MyString
+  home_team: MyString
+  away_team: MyString
+  start_time: 2021-05-11 07:55:20
+  end_time: 2021-05-11 07:55:20
+  location: MyString
