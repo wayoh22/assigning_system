@@ -1,0 +1,2 @@
+class AssignorsController < ApplicationController
+end
