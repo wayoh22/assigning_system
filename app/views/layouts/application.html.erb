@@ -44,6 +44,9 @@
           <a class="py-4 px-3">
             <%= link_to "Referee Login", new_referee_session_path %>
           </a>
+          <a>
+            <%= link_to "Logout", destroy_assignor_session_path, method: :delete, class: "button" %>
+          </a>
           
         </div>
       </div>
