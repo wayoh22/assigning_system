@@ -36,9 +36,13 @@
             </a>
           </div>
         <div class="flex items-center space-x-1">
-          <a href="#" class="py-4 px-3">Assignor Login</a>
-          <a href="#" class="py-4 px-3">Referee Login</a>
-          <a href="#" class="py-4 px-3">Coach Login</a>
+          <a href="#" class="py-4 px-3">
+            <%= link_to "Assignor Login", new_assignor_session_path %>
+          </a>
+          <a href="#" class="py-4 px-3">
+            <%= link_to "Referee Login", new_referee_session_path %>
+          </a>
+          
         </div>
       </div>
     </div>
