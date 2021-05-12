@@ -1,19 +1,49 @@
-<div class="container">
+<div class="flex justify-center mt-10">
   <%= simple_form_for(@game) do |f| %>
     <%= f.error_notification %>
     <%= f.error_notification message: f.object.errors[:base].to_sentence if f.object.errors[:base].present? %>
 
     <div class="form-inputs">
-      <%= f.input :league %>
-      <%= f.input :home_team %>
-      <%= f.input :away_team %>
-      <%= f.input :start_time %>
-      <%= f.input :end_time %>
-      <%= f.input :location %>
-    </div>
+      <div class="field mt-2 mb-2">
+        <div class="control ">
+        <%= f.input :league, label: "League:", input_html: {class: "border border-solid rounded-md border-blue-600"} %>
+        </div>
+      </div>
 
-    <div class="form-actions">
-      <%= f.button :submit %>
-    </div>
+      <div class="field mt-2 mb-2">
+        <div class="control ">
+        <%= f.input :home_team, label: "Home Team:", input_html: {class: "border border-solid rounded-md border-blue-600"} %>
+        </div>
+      </div>
+
+      <div class="field mt-2 mb-2">
+        <div class="control">
+        <%= f.input :away_team, label: "Away Team:" , input_html: {class: "border border-solid rounded-md border-blue-600"} %>
+        </div>
+      </div>
+
+      <div class="field mt-2 mb-2">
+        <div class="control">
+        <%= f.input :start_time, label: "Start Time:", input_html: {class: "border border-solid rounded-md border-blue-600"} %>
+        </div>
+      </div>
+
+      <div class="field mt-2 mb-2">
+        <div class="control">
+        <%= f.input :end_time, label: "End Time:", input_html: {class: "border border-solid rounded-md border-blue-600"} %>
+        </div>
+      </div>
+
+      <div class="field mt-2 mb-2">
+        <div class="control">
+        <%= f.input :location, label: "Location:", input_html: {class: "border border-solid rounded-md border-blue-600"} %>
+        </div>
+      </div>
+
+      <div class="field">
+        <div class="control">
+        <%= f.button :submit, "Create!", class:"button"%>
+        </div>
+      </div>
   <% end %>
 </div>
