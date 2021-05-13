@@ -1,36 +1,30 @@
-<p id="notice"><%= notice %></p>
-
-<h1>Games</h1>
-
-<table>
-  <thead>
-    <tr>
-      <th>League</th>
-      <th>Home team</th>
-      <th>Away team</th>
-      <th>Start time</th>
-      <th>End time</th>
-      <th>Location</th>
-      <th colspan="3"></th>
-    </tr>
-  </thead>
-
-  <tbody>
-    <% @games.each do |game| %>
+ <div class="flex items-center justify-center h-screen"> 
+  <table class="shadow-lg bg-white text-center">
+    <thead>
       <tr>
-        <td><%= game.league %></td>
-        <td><%= game.home_team %></td>
-        <td><%= game.away_team %></td>
-        <td><%= game.start_time %></td>
-        <td><%= game.end_time %></td>
-        <td><%= game.location %></td>
-        <td><%= link_to 'Show', game %></td>
-        <td><%= link_to 'Edit', edit_game_path(game) %></td>
-        <td><%= link_to 'Destroy', game, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+        <th class="bg-blue-100 border border-black text-center px-8 py-4">League</th>
+        <th class="bg-blue-100 border border-black text-center px-8 py-4">Home team</th>
+        <th class="bg-blue-100 border border-black text-center px-8 py-4">Away team</th>
+        <th class="bg-blue-100 border border-black text-center px-8 py-4">Start time</th>
+        <th class="bg-blue-100 border border-black text-center px-8 py-4">End time</th>
+        <th class="bg-blue-100 border border-black text-center px-8 py-4">Location</th>
       </tr>
-    <% end %>
-  </tbody>
-</table>
+    </thead>
+
+    <tbody>
+      <% @games.each do |game| %>
+        <tr>
+          <td class="border px-8 py-4"><%= game.league %></td>
+          <td class="border px-8 py-4"><%= game.home_team %></td>
+          <td class="border px-8 py-4"><%= game.away_team %></td>
+          <td class="border px-8 py-4"><%= game.start_time %></td>
+          <td class="border px-8 py-4"><%= game.end_time %></td>
+          <td class="border px-8 py-4"><%= game.location %></td>
+        </tr>
+      <% end %>
+    </tbody>
+  </table>
+</div>  
 
 <br>
 
