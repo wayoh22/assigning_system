@@ -17,8 +17,8 @@
           <td class="border px-8 py-4"><%= game.league %></td>
           <td class="border px-8 py-4"><%= game.home_team %></td>
           <td class="border px-8 py-4"><%= game.away_team %></td>
-          <td class="border px-8 py-4"><%= game.start_time %></td>
-          <td class="border px-8 py-4"><%= game.end_time %></td>
+          <td class="border px-8 py-4"><%= game.start_time.strftime("%a %B %e, %Y @ %I:%M%P") %></td>
+          <td class="border px-8 py-4"><%= game.end_time.strftime("%a %B %e, %Y @ %I:%M%P") %></td>
           <td class="border px-8 py-4"><%= game.location %></td>
         </tr>
       <% end %>
