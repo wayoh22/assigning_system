@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2021_05_12_110539) do
+ActiveRecord::Schema.define(version: 2021_05_14_123848) do
 
   create_table "assignors", force: :cascade do |t|
     t.string "email", default: "", null: false
@@ -41,6 +41,8 @@ ActiveRecord::Schema.define(version: 2021_05_12_110539) do
     t.string "location"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
+    t.integer "assignor_id"
+    t.integer "referee_id"
   end
 
   create_table "referees", force: :cascade do |t|

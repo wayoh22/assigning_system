@@ -9,11 +9,11 @@ Game.delete_all
 
 puts "Seeding..."
 
-Game.create(league:"EDP", home_team:"Chelsea Piers Shoreline SC Atletico ", away_team:"Inter Connecticut FC", start_time:Time.now, end_time:Time.now + 7200, location:"Stanwich School")
-Game.create(league:"EDP", home_team:"Chelsea Piers Shoreline SC Marseille", away_team:"Inter Connecticut FC", start_time:Time.now, end_time:Time.now + 7200, location:"Stanwich School")
-Game.create(league:"EDP", home_team:"Chelsea Piers Shoreline SC Manchester City", away_team:"Inter Connecticut FC", start_time:Time.now, end_time:Time.now + 7200, location:"Stanwich School")
-Game.create(league:"EDP", home_team:"Chelsea Piers Shoreline SC Chelsea", away_team:"Inter Connecticut FC", start_time:Time.now, end_time:Time.now + 7200, location:"Stanwich School")
-Game.create(league:"EDP", home_team:"Chelsea Piers Shoreline SC Barcelona", away_team:"Inter Connecticut FC", start_time:Time.now, end_time:Time.now + 7200, location:"Stanwich School")
-Game.create(league:"EDP", home_team:"Chelsea Piers Shoreline SC Verona", away_team:"Inter Connecticut FC", start_time:Time.now, end_time:Time.now + 7200, location:"Stanwich School")
+Game.create(league:"EDP", home_team:"Chelsea Piers Shoreline SC Atletico ", away_team:"Inter Connecticut FC", start_time:Time.now, end_time:Time.now + 7200, location:"Stanwich School", assignor_id:1, referee_id:3)
+Game.create(league:"EDP", home_team:"Chelsea Piers Shoreline SC Marseille", away_team:"Inter Connecticut FC", start_time:Time.now, end_time:Time.now + 7200, location:"Stanwich School", assignor_id:1, referee_id:3)
+Game.create(league:"EDP", home_team:"Chelsea Piers Shoreline SC Manchester City", away_team:"Inter Connecticut FC", start_time:Time.now, end_time:Time.now + 7200, location:"Stanwich School", assignor_id:1, referee_id:3)
+Game.create(league:"EDP", home_team:"Chelsea Piers Shoreline SC Chelsea", away_team:"Inter Connecticut FC", start_time:Time.now, end_time:Time.now + 7200, location:"Stanwich School", assignor_id:1, referee_id:3)
+Game.create(league:"EDP", home_team:"Chelsea Piers Shoreline SC Barcelona", away_team:"Inter Connecticut FC", start_time:Time.now, end_time:Time.now + 7200, location:"Stanwich School", assignor_id:1, referee_id:3)
+Game.create(league:"EDP", home_team:"Chelsea Piers Shoreline SC Verona", away_team:"Inter Connecticut FC", start_time:Time.now, end_time:Time.now + 7200, location:"Stanwich School", assignor_id:1, referee_id:3)
 
 puts "Seeding complete."
