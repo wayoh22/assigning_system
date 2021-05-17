@@ -56,6 +56,10 @@ class GamesController < ApplicationController
     end
   end
 
+  def build_assignment(referee:, assignor:)
+    referee_assignments.new(referee: referee.assignor: assignor)
+  end
+
   private
     # Use callbacks to share common setup or constraints between actions.
     def set_game
