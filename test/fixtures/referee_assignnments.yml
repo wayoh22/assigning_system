@@ -1,0 +1,11 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  assignor: one
+  game: one
+  referee: one
+
+two:
+  assignor: two
+  game: two
+  referee: two
