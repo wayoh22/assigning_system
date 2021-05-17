@@ -1,3 +1,6 @@
+# == Route Map
+#
+
 Rails.application.routes.draw do 
   devise_for :referees, path: "referees", controller: { sessions: "referees/sessions" }
   devise_for :assignors, path: "assignors", controller: { sessions: "assignors/sessions" }
