@@ -11,7 +11,6 @@
 # It's strongly recommended that you check this file into your version control system.
 
 ActiveRecord::Schema.define(version: 2021_05_21_134920) do
-
   create_table "games", force: :cascade do |t|
     t.string "home_team"
     t.string "away_team"

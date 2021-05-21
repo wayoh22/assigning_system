@@ -1,6 +1,6 @@
 require "test_helper"
 
-class RefereeControllerTest < ActionDispatch::IntegrationTest
+class RefereeTest < ActiveSupport::TestCase
   # test "the truth" do
   #   assert true
   # end
