@@ -1,9 +1,11 @@
 <div class="flex items-center justify-center h-screen space-x-4">
   <button class="w-52 h-12 px-6 border-2 border-black text-large bg-gradient-to-l from-blue-400 to-blue-500 text-black font-bold rounded">
-  League
-</button><button class="w-52 h-12 px-6 border-2 border-black text-large bg-gradient-to-l from-blue-400 to-blue-500 text-black font-bold py-2 px-4 rounded">
-  Assignor
-</button><button class=" w-52 h-12 px-6 border-2 border-black text-large bg-gradient-to-l from-blue-400 to-blue-500 text-black font-bold py-2 px-4 rounded">
-  Referee
-</button>
+  <%= link_to "League Login" %>
+  </button>
+  <button class="w-52 h-12 px-6 border-2 border-black text-large bg-gradient-to-l from-blue-400 to-blue-500 text-black font-bold rounded">
+  <%= link_to "Assignor Login", new_assignor_session_path %>
+  </button>
+  <button class="w-52 h-12 px-6 border-2 border-black text-large bg-gradient-to-l from-blue-400 to-blue-500 text-black font-bold rounded">
+  <%= link_to "Referee Login", new_referee_session_path %>
+  </button>
 </div>
