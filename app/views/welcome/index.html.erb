@@ -1,11 +1,10 @@
-<div class="flex items-center justify-center h-screen space-x-4">
-  <button class="w-52 h-12 px-6 border-2 border-black text-large bg-gradient-to-l from-blue-400 to-blue-500 text-black font-bold rounded">
-  <%= link_to "League Login" %>
-  </button>
-  <button class="w-52 h-12 px-6 border-2 border-black text-large bg-gradient-to-l from-blue-400 to-blue-500 text-black font-bold rounded">
-  <%= link_to "Assignor Login", new_assignor_session_path %>
-  </button>
-  <button class="w-52 h-12 px-6 border-2 border-black text-large bg-gradient-to-l from-blue-400 to-blue-500 text-black font-bold rounded">
-  <%= link_to "Referee Login", new_referee_session_path %>
-  </button>
+<div class="container mx-auto">
+  <div class="space-x-20 flex items-center justify-center h-screen">
+    <button type="button" class="focus:outline-none text-white text-lg py-2.5 px-20 rounded-md bg-gradient-to-r from-blue-400 to-blue-600 transform hover:scale-110"">
+      <%= link_to "Referee Login", new_referee_session_path, class: "button" %>
+    </button>
+    <button type="button" class="focus:outline-none text-white text-lg py-2.5 px-20 rounded-md bg-gradient-to-r from-blue-400 to-blue-600 transform hover:scale-110"">
+      <%= link_to "Assignor Login", new_assignor_session_path, class: "button" %>
+    </button>
+  </div>
 </div>
