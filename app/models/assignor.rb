@@ -6,5 +6,6 @@ class Assignor < ApplicationRecord
 
   has_many :games
   has_many :referees
-  has_many :assigned_referees, through: :referee_assignments
+  has_many :assignments, through: :games
+  belongs_to :league
 end

@@ -2,6 +2,8 @@
 #
 
 Rails.application.routes.draw do 
+  resources :leagues
+  resources :assignments
   devise_for :assignors, path: "assignors", controllers: {registrations: "assignors/registrations", sessions: "assignors/sessions"}
   devise_for :referees, path: "referees", controllers: {registrations: "referees/registrations", sessions: "referees/sessions"}
   resources :games

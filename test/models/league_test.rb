@@ -1,6 +1,6 @@
 require "test_helper"
 
-class RefereeAssignnmentTest < ActiveSupport::TestCase
+class LeagueTest < ActiveSupport::TestCase
   # test "the truth" do
   #   assert true
   # end
