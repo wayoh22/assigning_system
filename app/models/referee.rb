@@ -4,7 +4,7 @@ class Referee < ApplicationRecord
   devise :database_authenticatable, :registerable,
          :recoverable, :rememberable, :validatable
 
-  belongs_to :assignor      
+  belongs_to :assignor, optional: true     
   has_many :games
   has_many :assignments, through: :games
   
