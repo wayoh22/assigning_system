@@ -10,7 +10,18 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2021_05_21_183826) do
+ActiveRecord::Schema.define(version: 2021_05_28_122821) do
+
+  create_table "assignments", force: :cascade do |t|
+    t.integer "assignor_id", null: false
+    t.integer "referee_id", null: false
+    t.integer "game_id", null: false
+    t.datetime "created_at", precision: 6, null: false
+    t.datetime "updated_at", precision: 6, null: false
+    t.index ["assignor_id"], name: "index_assignments_on_assignor_id"
+    t.index ["game_id"], name: "index_assignments_on_game_id"
+    t.index ["referee_id"], name: "index_assignments_on_referee_id"
+  end
 
   create_table "assignors", force: :cascade do |t|
     t.string "email", default: "", null: false
@@ -48,4 +59,7 @@ ActiveRecord::Schema.define(version: 2021_05_21_183826) do
     t.index ["reset_password_token"], name: "index_referees_on_reset_password_token", unique: true
   end
 
+  add_foreign_key "assignments", "assignors"
+  add_foreign_key "assignments", "games"
+  add_foreign_key "assignments", "referees"
 end
